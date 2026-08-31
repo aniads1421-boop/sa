@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahil Official</title>
     <style>
-        /* Basic Page Setup */
+        /* Basic Page Setup with a Lighter Background Overlay for Maximum Visibility */
         body {
-            background-color: #0d0d0d;
+            /* Reduced overlay opacity to make the background image (sahil.jpg) much more vibrant and visible */
+            background: linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.4)), url('sahil.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
@@ -35,22 +40,24 @@
             object-fit: cover;
         }
 
-        /* Text Styles (matching size and color) */
+        /* Text Styles with Deep Shadows to Pop Against the Background */
         h1.name {
             color: #ffcc00; /* Bright Yellow */
             font-size: 34px;
             margin: 0 0 5px 0;
             font-weight: bold;
-            text-shadow: 0 0 5px #ffcc00;
+            text-shadow: 0 0 12px rgba(0, 0, 0, 0.95), 0 0 25px rgba(255, 204, 0, 0.6);
         }
         p.members {
-            color: #ffcc00;
+            color: #ffeb3b;
             font-size: 18px;
+            font-weight: 600;
             margin-top: 5px;
             margin-bottom: 25px;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95);
         }
 
-        /* Tag Styles */
+        /* Tag Styles with Dark Backdrop */
         .tags {
             display: flex;
             justify-content: center;
@@ -65,6 +72,8 @@
             font-size: 14px;
             font-weight: bold;
             text-transform: uppercase;
+            background: rgba(0, 0, 0, 0.85);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
         }
 
         /* Stat Boxes */
@@ -77,25 +86,30 @@
             max-width: 400px;
         }
         .stat-box {
-            background: #1a1a1a;
+            background: rgba(15, 15, 15, 0.85);
             padding: 20px;
             border-radius: 15px;
-            border: 1px solid #333;
+            border: 1px solid rgba(255, 255, 255, 0.2);
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(6px);
         }
         .stat-box h2 {
             color: #ffcc00; /* Yellow */
             font-size: 28px;
             margin: 0;
             font-weight: bold;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
         }
         .stat-box p {
-            color: #888; /* Grey */
+            color: #ddd; 
             font-size: 12px;
+            font-weight: 600;
             margin: 5px 0 0 0;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
         }
 
         /* Animated Join Button (Small-Big Pulse) */
@@ -110,7 +124,7 @@
             display: inline-block;
             margin-bottom: 50px;
             transition: transform 0.2s;
-            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+            box-shadow: 0 5px 20px rgba(40, 167, 69, 0.6);
             
             /* Animation */
             animation: pulseButton 2s infinite;
@@ -125,7 +139,7 @@
 
         .telegram-btn:hover {
             transform: scale(1.08); /* Extra scale on hover */
-            box-shadow: 0 8px 20px rgba(220, 53, 69, 0.6);
+            box-shadow: 0 8px 25px rgba(220, 53, 69, 0.8);
         }
 
         /* Footer */
@@ -133,10 +147,12 @@
             display: flex;
             justify-content: center;
             gap: 40px;
-            color: #666;
+            color: #fff;
             font-size: 14px;
+            font-weight: 600;
             width: 100%;
             max-width: 500px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
         }
         .icon-item {
             text-align: center;
@@ -149,9 +165,10 @@
 
         .footer-text {
             margin-top: 30px;
-            font-size: 11px;
-            color: #444;
+            font-size: 12px;
+            color: #eee;
             line-height: 1.4;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95);
         }
 
     </style>
@@ -160,7 +177,6 @@
 
     <!-- Profile Picture Section -->
     <div class="profile-pic-container">
-        <!-- STEP 1 & 2: Replace sahil.jpg with the direct link to sahil.jpg -->
         <img src="sahil.jpg" alt="Sahil Official" class="profile-pic">
     </div>
 
@@ -190,7 +206,7 @@
         </div>
     </div>
 
-    <!-- STEP 3: Replace https://t.me/+g7f0jOVIf0AxMGU1 with your Telegram link -->
+    <!-- Telegram Link Button -->
     <a href="https://t.me/+g7f0jOVIf0AxMGU1" class="telegram-btn">Join Telegram Channel</a>
 
     <!-- Footer Icons -->
@@ -211,7 +227,7 @@
 
     <!-- Footer Text -->
     <p class="footer-text">
-        © 2026 Sahil Official. All rights reserved.<br>
+        © 2026 Aladin Fixer. All rights reserved.<br>
         Professional Cricket, Tennis Analysis & Predictions
     </p>
 
